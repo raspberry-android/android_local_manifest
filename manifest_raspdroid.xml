@@ -4,5 +4,6 @@
 
 <project path="vendor/rasp-droid/raspdroid" name="raspberry-android/android_raspdroid_device" remote="github" revision="main" >
 <project path="vendor/rasp-droid/raspdroid/serialport-hal" name="raspberry-android/android-serialport-hal" remote="github" revision="main" >
+<project path="vendor/rasp-droid/raspdroid/serialport-service" name="raspberry-android/android-serialport-service" remote="github" revision="main" >
 
 </manifest>
