@@ -19,7 +19,8 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r22
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0.0_r22/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-android/android_local_manifest/android-14.0.0_r22/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_raspdroid.xml -L https://raw.githubusercontent.com/raspberry-android/android_local_manifest/android-14.0.0_r22/manifest_raspdroid.xml --create-dirs
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
@@ -27,6 +28,7 @@ Or optionally, you can reduce download size by creating a shallow clone and remo
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r22 --depth=1
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0.0_r22/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_raspdroid.xml -L https://raw.githubusercontent.com/raspberry-android/android_local_manifest/android-14.0.0_r22/manifest_raspdroid.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0.0_r22/remove_projects.xml
 ```
 
